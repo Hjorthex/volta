@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="car luxury volta electric configure customize">
+    <meta name="description" content=" this is a page where you can configurate and modify and customize your car from volta, furthermore you can submit it to place an order">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <title>Volta</title>
+</head>
+<body>
+<!-- header and menu start-->
+  <header>
+    <a href="http://andonovska.dk/volta"><div class="profile"><img src="./images/profile.png" alt="profileicon"> </div></a>
+    <a href="http://hjorthex.dk/volta"><div class="logo">  <img src="./images/logot.png" alt="voltalogo">  </div></a>
+    
+    <img onclick="openNav()" class="burger" src="./images/burger.png" alt="menuicon">
+    
+    <div class="blackline"></div>
+    <div class="goldyhead"></div>
+    <div class="greyline"></div>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="http://hjorthex.dk/volta">home</a>
+      <a href="http://andonovska.dk/volta">sign in</a>
+      <a href="http://boldenst.dk/volta">build your volta</a>     
+      <a href="http://lauramedie.dk/volta">contact</a>
+      <a href="http://tobyqvist.dk/volta">about us</a>
+    </div>
+  </header>
+
+  <!-- header and menu end-->
+
+  <main class="maincontainer"> 
+    
+    <section class="configurator">
+      <h2 class="customizetext">customize your volta</h2>
+      <div id="spoiled">
+        <img class="spoiler" src="./images/spoiler.png" alt="spoilerpart">
+      </div>
+
+      <div id="squarewheel">
+        <img class="squared" src="./images/squares.png" alt="voltawheels">
+      </div>
+      <div id="redwheel">
+        <img class="redrims" src="./images/redrim.png" alt="voltawheelsred">
+      </div>
+      <div id="classicwheel">
+        <img class="classicrims" src="./images/classicrim.png" alt="voltawheelsclassic">
+      </div>
+      <div id="dollarwheel">
+        <img class="dollarrims" src="./images/dollars.png" alt="voltawheelsdollar">
+      </div>
+
+      <div id="orange">
+        <img class="orangecar" src="./images/orangeconfigs.png" alt="orangevoltav1">
+      </div>
+      <div id="yellow">
+        <img class="yellowcar" src="./images/yellowconfigs.png" alt="yellowvoltav1">
+      </div>
+      <div id="green">
+        <img class="greencar" src="./images/greenconfigs.png" alt="greenvoltav1">
+      </div>
+      <div id="black">
+        <img class="blackcar" src="./images/blackconfigs.png" alt="blackvoltav1">
+      </div>      
+      <div class="scrap">
+        <img class="scrapcar" src="./images/scrappeds.png" alt="sketchvoltav1">
+      </div>
+    </section>
+        
+    <div class="styling">
+      <img class="black-paint" onclick="showblack()" src="./images/paintbla.png" alt="painticonblack">
+      <img class="green-paint" onclick="showgreen()" src="./images/paintgre.png" alt="painticongreen">
+      <img class="yellow-paint" onclick="showyellow()" src="./images/paintyel.png" alt="painticonyellow">
+      <img class="orange-paint" onclick="showorange()" src="./images/paintora.png" alt="painticonorange">
+
+      <img class="black-wheel" onclick="showsquare()" src="./images/iconwheel1.png" alt="wheeliconsquare">
+      <img class="green-wheel" onclick="showred()" src="./images/iconwheel2.png" alt="wheeliconred">
+      <img class="yellow-wheel" onclick="showclassic()" src="./images/iconwheel3.png" alt="wheeliconclassic">
+      <img class="orange-wheel" onclick="showdollar()" src="./images/iconwheel4.png" alt="wheelicondollar">
+      
+      <img class="spoil-on" onclick="showspoiler()" src="./images/iconspoil.png" alt="spoilericon">
+    </div>
+
+    <section class="addons">
+      <div class="specifications">
+        <h2>main features:</h2>
+        <p>Long Range = 450km</p>
+        <p>0-100km/h = 1.8sec</p>
+        <p>Quick Charging = 100% in 30min</p>
+        <p>Wireless Charging</p>
+
+      </div>
+
+      <div class="speaker">
+        <img class="features" src="./images/speaker.jpg" alt="voltasound">
+        <h3 class="featureinfo">B&O Sound System</h3>
+        <label class="check">
+          <input type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="selfdrive">
+        <img class="features" src="./images/ai.jpg" alt="artificialintelligence">
+        <h3 class="featureinfo">Selfdriving feature</h3>
+        <label class="check">
+          <input type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="smartcar">
+        <img class="features" src="./images/google.jpg" alt="googlehomespeaker">
+        <h3 class="featureinfo">Google Assistant</h3>
+        <label class="check">
+          <input type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="laser">
+        <img class="features" src="./images/laser.jpg" alt="lasercutter">
+        <h3 class="featureinfo">Laser engraved text</h3>
+        <input class="customtext" type="text" name="ftext" placeholder="Your text..">
+
+      </div>
+      <div class="email">
+        <p>email:</p>
+        <input type="text" name="email" placeholder="Your email..">
+      </div>
+        <a href="submitconfig.html">Submit Design</a>
+        <p class="disclaim">By submitting this design you are granting Volta Auto A/S permission to do a background check, before we are able to place your order. </p>
+        <p class="contact">You will be contacted by a Volta representative as soon as we are ready to proceed with your order. </p>
+    </section> 
+  </main> 
+  <script>
+    function openNav() {
+          document.getElementById("mySidenav").style.width = "100vw";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }  
+    
+        function showgreen() {
+      var x = document.getElementById("green");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    
+    
+    function showyellow() {
+      var x = document.getElementById("yellow");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    
+    function showblack() {
+      var x = document.getElementById("black");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    
+    function showorange() {
+      var x = document.getElementById("orange");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    
+    function showsquare() {
+      var x = document.getElementById("squarewheel");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    
+    function showred() {
+      var x = document.getElementById("redwheel");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    
+    function showclassic() {
+      var x = document.getElementById("classicwheel");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    
+    function showdollar() {
+      var x = document.getElementById("dollarwheel");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    
+    function showspoiler() {
+      var x = document.getElementById("spoiled");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    
+    
+      </script>
+  
+
+</body>
+
+
+
+</html>

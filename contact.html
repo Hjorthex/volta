@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="Concept,car,luxury">
+    <meta name="description" content="website for concept car">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <title>Contact</title>
+</head>
+<body>
+<!-- header and menu start-->
+
+<header>
+  <a href="http://andonovska.dk/volta"><div class="profile"><img src="./images/profile.png" alt=""> </div></a>
+  <a href="http://hjorthex.dk/volta"><div class="logo">  <img src="./images/logot.png" alt="">  </div></a>
+  
+  <img onclick="openNav()" class="burger" src="./images/burger.png" alt="">
+  
+  <div class="blackline"></div>
+  <div class="goldyhead"></div>
+  <div class="greyline"></div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="http://hjorthex.dk/volta">home</a>
+    <a href="http://andonovska.dk/volta">sign in</a>
+    <a href="http://boldenst.dk/volta">build your volta</a>     
+    <a href="http://lauramedie.dk/volta">contact</a>
+    <a href="http://tobyqvist.dk/volta">about us</a>
+  </div>
+</header>
+<section class="contactwrap">
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100vw";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+  <!-- header and menu end-->
+
+  <div class="testdrive">
+      <h2>Testdrive</h2>
+      <p> 
+        Find us in our store and try the<br>
+        brand new Volta v1
+      </p>
+  </div>
+  
+  <div class="location">
+    <h3>Our location</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2260.5976778047507!2d12.155687107934584!3d55.487109694355446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652f16a5d0a5239%3A0xe1db426cb0a12638!2sCampus%20K%C3%B8ge!5e0!3m2!1sda!2sdk!4v1605091129498!5m2!1sda!2sdk" 
+    ></iframe>
+  </div>
+  
+  <div class="faq">
+    <h3>faq</h3>
+    <h4>What is the range on one charge?</h4>
+    <h5>You will be able to drive at least 350 miles on one charge</h5>
+    <h4>How can I get service on my car?</h4>
+    <h5>You can contact our authorized service providers through the form below</h5>
+    <h4>Read more...</h4>
+  </div>
+  
+  <div class="contact">
+    <h3>If you have further questions, feel<br>free to contact us below.</h3>
+    <form>
+      <p>
+        <label>Name</label>
+        <input type="text" name="name">
+      </p>
+
+      <p>
+        <label>Email</label>
+        <input type="email" name="Email">
+      </p>
+
+      <p>
+        <label>Phone number</label>
+        <input type="text" name="Number">
+      </p>
+
+      <p>
+        <label>Comment</label>
+        <textarea name="comment" rows="4"></textarea>
+      </p>
+
+        <div class="submit">
+          <a href="submitcontact.html">Submit</a>
+        </div> 
+      </form>
+  </div>
+</section>
+    
+</body>
+</html>
