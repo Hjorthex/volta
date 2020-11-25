@@ -313,8 +313,46 @@ main {
   width: 100%;
 }
 
-/* Index end*/
-/* Profile start*/
+@media screen and (min-width: 1366) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      ". model customize about location partner . . login search search . . ."
+      "text text text text text text text text text text text text"
+      "concept concept concept concept concept concept concept concept concept concept concept concept"
+      "writing writing writing writing writing writing writing writing writing writing writing writing"
+      "visual visual visual visual visual visual visual visual visual visual visual visual"
+      "letters letters letters letters letters letters letters letters letters letters letters letters"
+      "custom custom custom custom custom custom custom custom custom custom custom custom"
+      "need need need need need need need need need need need need"
+      "stats stats stats stats stats stats stats stats stats stats stats stats"
+      "contact contact contact contact contact contact contact contact contact contact contact contact"
+      "map map map map map map map map map map map map";
+  }
+
+  nav {
+  }
+
+  nav ul {
+  }
+
+  nav ul li {
+    border-style: solid;
+    border-color: white;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    border-width: 0.15rem;
+    width: 8rem;
+    text-align: center;
+  }
+
+  nav ul li a {
+  }
+}
+
+/* Index end*/ /* Profile start*/
 
 .profilewrap {
   background-color: #000000;
