@@ -346,14 +346,15 @@ margin-right: 0.7rem;
   padding-right: 5%;
   padding-left: 2%;
   padding-bottom: 20%;
+  position: absolute;
   }
   
   .profilepicture{
     position: absolute;
-    z-index: 101;
-  float: left;
-  width: 20%;
-  margin-left: 10rem;
+    margin-top: 20%;
+    z-index: 90;
+    width: 20%;
+    margin-left: 10rem;
   }
   
   .info h2 {
@@ -385,9 +386,6 @@ margin-right: 0.7rem;
 
 .image{
  margin-top: 1%; 
- background-color: #CAAC4E;
- padding-top: 0.5%;
- padding-bottom: 0.5%;
  width: 100%;
 }
 
