@@ -962,6 +962,12 @@ main {
   margin-bottom: 2.8rem;
   font-size: 1.2em;
 }
+.full-text{
+  display: inline-block;
+}
+.short-text{
+  display: none;
+}
 .contact input {
   line-height: 0.5rem;
   padding: 1rem;
@@ -1020,5 +1026,17 @@ main {
       "location location location location location location location location location location location location"
       ". faq faq faq faq faq contact contact contact contact contact ."
       ". . . . . submit submit . . . . .";
+  }
+  .testdrive h2{
+    padding-top: 2rem;
+  }
+  .location iframe{
+    height: 35rem;
+  }
+  .full-text{
+    display: none;
+  }
+  .short-text{
+    display: inline-block;
   }
 }
