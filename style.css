@@ -469,7 +469,9 @@ margin-right: 0.7rem;
       "text text text text"
       "config config config config"
       "styles styles styles styles"
-      "addon addon addon addon";
+      "addon addon addon addon"
+      "contact contact contact contact"
+      "mail mail submit submit";
     column-gap: 1rem;
     row-gap: 0;
   }
@@ -533,6 +535,7 @@ margin-right: 0.7rem;
   position: absolute;
   z-index: 101;
     display: none;
+
 }
 
 #spoiled {
@@ -660,18 +663,15 @@ margin-bottom: 1rem;
 .addons {
   grid-area: addon;
   display: grid;
-  grid-template-columns: 7vw 1fr 1fr 7vw;
+  grid-template-columns: 7vw 1fr 1fr 1fr 1fr 7vw;
   grid-template-rows: auto;
   grid-template-areas: 
-  ". specs specs ."
-    ". sound sound ."
-    ". ai ai ."
-    ". google google ."
-    ". laser laser ."
-    ". mail mail ."
-   ". submit submit ."
-   ". disclaimer disclaimer ."
-   ". contact contact .";
+  ". specs specs specs specs ."
+    ". sound sound sound sound ."
+    ". ai ai ai ai ."
+    ". google google google google ."
+    ". laser laser laser laser ."
+;
 
   column-gap: 0.7rem;
   row-gap: 0.1rem;
@@ -703,8 +703,13 @@ margin-bottom: 1rem;
 }
 
 .addons div {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 
+}
+
+.addons img {
+  display: none;
+  width: 10rem;
 }
 
 .speaker {
@@ -737,7 +742,6 @@ margin-bottom: 1rem;
 .selfdrive {
   padding-bottom: 2rem;
   grid-area: ai;
-  margin-top: 0.7rem;
   border: 0.09rem solid white;
   border-radius: 3rem;
   background-image: url(./images/ai.jpg);
@@ -769,12 +773,12 @@ margin-bottom: 1rem;
   border-radius: 3rem;
   background-image: url(./images/laser.jpg);
   width: 100%;
-  height: 4rem;
+  height: 6rem;
   background-size: cover;
   background-position: center;
 }
 .laser h3 {
-  padding-top: 0.3rem;
+  padding-top: 1.5rem;
 }
 
 .customtext {
@@ -840,38 +844,30 @@ margin-top: 0.1rem;
   display: flex;
   flex-direction: row;
   grid-area: mail;
-  background-color: #505252;
+  background-color: black;
   height: 2.5rem;
-}
-
-.email p {
-  color: #eee;
-  text-transform: capitalize;
-  padding-top: 0.6rem;
-  padding-left: 1rem;
-}
-
-.email input {
-  width: 75%;
   padding: 0.5rem 0.5rem;
-  margin: 0.3rem 0.3rem 0.3rem 1rem;
+  margin: 0.3rem 0.3rem 1rem 0.3rem;
   display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 0.2rem;
+  border: 0.1rem solid white;
+  border-radius: 3rem;
   box-sizing: border-box;
 }
 
 
-.addons a {
+.submitdesign {
   text-decoration: none;
   color: white;
   text-align: center;
-  padding-top: 0.7rem;
+  padding-top: 0.4rem;
   font-weight: 500;
-  font-size: 2.3ch;
-  padding-bottom: 0.7rem;
-  grid-area: submit;
-  background-color: #505252;
+  font-size: 2ch;
+  padding-bottom: 0.4rem;
+  grid-area: send;
+  background-color: #000000;
+  border: 0.09rem solid white;
+  border-radius: 3rem;
+  margin-bottom: 3rem;
 }
 
 .disclaim {
@@ -882,11 +878,12 @@ margin-top: 0.1rem;
 }
 
 .contact {
+  padding-top: 5rem;
   font-size: 2ch;
   font-weight: 300;
   grid-area: contact;
   color: white;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 
 /* Configure end */
@@ -935,6 +932,105 @@ margin-top: 0.1rem;
 }
 
   /* end */ 
+
+  @media only screen and (min-width: 1366px) {
+    .addons img {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+
+    .maincontainer {
+
+      background-color: #000000;
+      display: grid;
+      grid-template-columns: 4vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 4vw;
+      grid-template-rows: auto;
+      grid-template-areas: 
+        ". . text text text . . . . . . . . ."
+        ". . config config config config config config addon addon addon addon . ."
+        ". . styles styles styles styles styles styles addon addon addon addon . ."
+        ". . . . . . contact contact . . . . . ."
+        ". . . . . mail mail mail send . . . . ."
+        ;
+      column-gap: 1rem;
+      row-gap: 0;
+    }
+    .customizetext {
+text-align: left;
+padding-bottom: 2rem;
+padding-top: 5rem;
+    }
+
+    .configurator div img {
+      width: 45vw;
+
+    }
+
+
+    .styling {
+      background-color: black;
+      padding-bottom: 1rem;
+      border: 0.09rem solid white;
+      border-radius: 0.2rem;
+    }
+
+    .addons {
+      margin-top: 9rem;
+      grid-area: addon;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      ". . . ."
+        "sound sound ai ai"
+        "google google laser laser"
+        "specs specs specs specs";
+        column-gap: 1rem;
+
+      row-gap: 4rem;
+    }
+    .addons div {
+      background-image: none;
+      border: none;
+      width: 100%;
+    }
+    .addons div h3 {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border: 0.09rem solid white;
+      border-radius: 3rem;
+      font-weight: 300;
+      font-size: 1.5ch;
+
+    }
+    .specifications {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border: 0.09rem solid white;
+      border-radius: 3rem;
+    }
+
+    .speaker {
+      margin-top: 0;
+      padding-bottom: 7vh;
+
+    }
+
+    .smartcar {
+      padding-bottom: 7vh;
+    }
+
+
+
+    .laser input {
+      display: none;
+    }
+    .contact {
+    }
+
+  }
 
   /* About start */
   #landing-text h1{
