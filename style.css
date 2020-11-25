@@ -1033,10 +1033,43 @@ main {
   .location iframe{
     height: 35rem;
   }
+  }
+  .faq h3{
+    padding-top: 5.5rem;
+    padding-bottom: 1.3rem;
+    padding-right: 22.5rem;
+    font-size: 1.5em;
+  }
+  .faq h4{
+    font-size: 1.2em;
+    padding-left: 2.5rem;
+  }
+  .faq h5{
+    font-size: 1.2em;
+    padding-left: 2.6rem;
+  }
+  .more{
+    display: none;
+  }
+  .contact{
+    padding-left: 4.5rem;
+    font-size: 1.2em;
+  }
+  .contact h3{
+    padding-left: 2rem;
+  }
   .full-text{
     display: none;
   }
   .short-text{
+    display: inline-block;
+    padding-top: 1.5rem;
+    padding-right: 16em;
+  }
+  .full-form{
+    display: none;
+  }
+  .short-form{
     display: inline-block;
   }
 }
