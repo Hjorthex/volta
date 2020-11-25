@@ -412,14 +412,14 @@ margin-right: 0.7rem;
       background-color: #ffffff;
       color: black;
       display: block;
-      margin-top: 10%;
-      padding-bottom: 20rem;
+      margin-top: 10rem;
+      padding-bottom: 12rem;
       flex-direction: row;
       display: flex;
       }
   
   .destinations h1{
-      padding-top: 2rem;
+      padding-top: 10rem;
       padding-left: 2rem;
       font-size: 2.5rem;
       margin-bottom: 7rem;
@@ -438,10 +438,7 @@ margin-right: 0.7rem;
       .destinations-image{
         background-color: white;
         width: 40%;
-        margin-top: 4rem;
-        text-align: right;
-        
-        
+        margin-top: 10rem;
         }
 
 
