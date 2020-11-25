@@ -330,6 +330,9 @@ margin-right: 0.7rem;
 }
 
   /* Index end*/ 
+
+
+
   /* Profile start*/ 
 
 
@@ -340,53 +343,45 @@ margin-right: 0.7rem;
 }
 
 .info{
-  display: block;
-  margin-top: 10%;
-  padding-top: 25%;
-  padding-right: 5%;
-  padding-left: 2%;
-  padding-bottom: 20%;
+  margin-top: 5rem;
+  margin-left: 9rem;
+  padding-top: 3rem;
   position: absolute;
-  }
-  
-  .profilepicture{
-    position: absolute;
-    margin-top: 20%;
-    z-index: 90;
-    width: 20%;
-    margin-left: 10rem;
+  float: left;
   }
   
   .info h2 {
-    z-index: 100;
-  color: #000000; 
-  background-color: #CAAC4E;     
+    z-index: 120;
+    color: #ffffff;     
     line-height: 8mm;
-    float: left;
-    width: 50%;
+    width: 100%;
     text-align: left;
-    font-size: 2em;
-    margin-top: 5%;
-    margin-left: 24%;
-    padding-left: 10%;
-    padding-right: 12%;
+    font-size: 2.8em;
   }
 
   .info h3{
   color: white;      
       line-height: 6mm;
       float: right;
-      width: 50%;
+      width: 100%;
       text-align: left;
-      font-size: 1em;
-      margin-right: 15%;
+      font-size: 0.9em;
+      padding-top: 3%;
+  }
 
+  .profilepicture{
+    position: absolute;
+    margin-top: 7rem;
+    margin-left: 2rem;
+    z-index: 90;
+    width: 6rem;
+    
   }
 
 
 .image{
- margin-top: 1%; 
- width: 100%;
+  margin-top: 5rem;
+  width: 100%;
 }
 
 
