@@ -112,56 +112,7 @@ header {
 /*Desktop menu start*/
 
 .topnav {
-  display: flex;
-  padding-top: 8rem;
-  background-color: black;
-  overflow: hidden;
-}
-
-.topnav div {
-  padding-left: 2rem;
-}
-
-.topnav_left {
-  padding-left: 0rem;
-}
-
-.topnav_right {
-  display: flex;
-  margin-left: 10rem;
-}
-
-.topnav div ul {
-  list-style: none;
-  display: flex;
-}
-
-.topnav div ul li {
-  padding: 1rem;
-  border-radius: 3rem;
-  border-width: 0.15rem;
-  width: 8rem;
-  border-style: solid;
-  border-color: white;
-  padding: 1rem;
-  text-align: center;
-}
-
-.topnav div ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-.topnav input[type="text"] {
-  padding: 1rem;
-  border-radius: 3rem;
-  border-width: 0.15rem;
-  width: 16rem;
-  border-style: solid;
-  border-color: white;
-  padding: 1rem;
-  text-align: left;
-  color: white;
+  display: none;
 }
 
 /*Desktop menu end*/
@@ -373,25 +324,6 @@ main {
 
 .map-image img {
   width: 100%;
-}
-
-@media only screen and (min-width: 1366px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "text text text text text text text text text text text text"
-      "concept concept concept concept concept concept concept concept concept concept concept concept"
-      "writing writing writing writing writing writing writing writing writing writing writing writing"
-      "visual visual visual visual visual visual visual visual visual visual visual visual"
-      "letters letters letters letters letters letters letters letters letters letters letters letters"
-      "custom custom custom custom custom custom custom custom custom custom custom custom"
-      "need need need need need need need need need need need need"
-      "stats stats stats stats stats stats stats stats stats stats stats stats"
-      "contact contact contact contact contact contact contact contact contact contact contact contact"
-      "map map map map map map map map map map map map";
-  }
 }
 
 /* Index end*/ /* Profile start*/
@@ -1077,3 +1009,84 @@ main {
   padding-top: 4.7rem;
 }
 /* contact end*/
+
+@media only screen and (min-width: 1366px) {
+  /*Burger menu and profile icon disappear*/
+  .profile {
+    display: none;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  /*Navigaton Desktop*/
+  .topnav {
+    display: flex;
+    justify-content: center;
+    padding-top: 8rem;
+    background-color: black;
+  }
+
+  .topnav_left {
+    padding-right: 0rem;
+  }
+
+  .topnav_right {
+    display: flex;
+    padding-right: 0rem;
+  }
+
+  .topnav div ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .topnav div ul li {
+    padding: 1rem;
+    border-radius: 3rem;
+    border-width: 0.15rem;
+
+    border-style: solid;
+    border-color: white;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    text-align: center;
+    width: 6rem;
+  }
+
+  .topnav div ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .topnav input[type="text"] {
+    padding: 1rem;
+    border-radius: 3rem;
+    border-width: 0.15rem;
+    width: 16rem;
+    border-style: solid;
+    border-color: white;
+    padding: 1rem;
+    text-align: left;
+    color: white;
+  }
+
+  /*Main page grid*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "text text text text text text text text text text text text"
+      "concept concept concept concept concept concept concept concept concept concept concept concept"
+      "writing writing writing writing writing writing writing writing writing writing writing writing"
+      "visual visual visual visual visual visual visual visual visual visual visual visual"
+      "letters letters letters letters letters letters letters letters letters letters letters letters"
+      "custom custom custom custom custom custom custom custom custom custom custom custom"
+      "need need need need need need need need need need need need"
+      "stats stats stats stats stats stats stats stats stats stats stats stats"
+      "contact contact contact contact contact contact contact contact contact contact contact contact"
+      "map map map map map map map map map map map map";
+  }
+}
