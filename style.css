@@ -396,54 +396,52 @@ margin-right: 0.7rem;
 .schedule-image{
     padding-top: 1rem;
     width: 70%;
+    padding-left: 1rem;
 }
 
 
 .activities-image{
    padding-top: 1rem;
    width: 80%;
+   margin-bottom: 3rem;
+   padding-left: 1rem;
   }
 
 
   .destinations{
-      background-color: #000000;
+      background-color: #ffffff;
+      color: black;
       display: block;
-      margin-bottom: 40%;
       margin-top: 10%;
-      padding-bottom: 15rem;
-      padding-top: 1%;
+      padding-bottom: 20rem;
       }
+  
+  .destinations h1{
+      padding-top: 2rem;
+      padding-left: 2rem;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
       
-      .destinations-image{
-      float: left;
-      width: 40%;
-      margin: 15rem;
-      margin-bottom: 20%;
-      }
-      
-      .destinations h2 {
-      color: #CAAC4E;      
-        line-height: 8mm;
-        float: right;
-        width: 50%;
-        text-align: center;
-        font-size: 1em;
-        margin-top: 5%;
-        margin-right: 2%;
-      }
 
       .destinations h3{
-      color: white;  
-      background-color: #645523;    
+      color: black;      
           line-height: 6mm;
-          float: right;
           width: 50%;
-          text-align: center;
-          font-size: 1em;
-          margin-top: 1%;
+          text-align: left;
+          font-size: 1.5em;
+          margin-top: 1.5rem;
+          margin-left: 2rem;
           margin-right: 2%;
 
       }
+
+      .destinations-image{
+        background-color: white;
+        width: 20%;
+        position: absolute;
+        }
+
 
 
 
