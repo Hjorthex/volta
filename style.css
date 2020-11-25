@@ -948,9 +948,9 @@ color: white;
         grid-template-areas: 
         "testdrive testdrive testdrive testdrive"
         "location location location location"
-        "faq faq"
-        "contact contact"
-        "submit submit submit submit"
+        "faq faq faq faq"
+        "contact contact contact contact"
+        "submit . . ."
         ;
       }
 
@@ -1071,5 +1071,14 @@ color: white;
   }  
 /* contact end*/
 @media screen and (min-width: 1366px){
-  /* contact desktop start*/
+  .grid-container-contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "testdrive testdrive testdrive testdrive testdrive testdrive testdrive testdrive testdrive testdrive testdrive testdrive"
+    "location location location location location location location location location location location location"
+    "faq faq faq faq faq faq contact contact contact contact contact contact"
+    ". . . . . submit submit . . . . ."
+    ;
+  }
 }
