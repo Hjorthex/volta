@@ -946,16 +946,16 @@ color: white;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
-        "testdrive testdrive"
+        "testdrive testdrive testdrive testdrive"
         "location location location location"
         "faq faq"
         "contact contact"
+        "submit submit submit submit"
         ;
       }
 
       .testdrive {
-        display: grid;
-        grid-template-columns: auto;
+        grid-area: testdrive;
         text-align: center;
         letter-spacing: 1px;
         font-weight: 300;
@@ -973,6 +973,9 @@ color: white;
       text-align: center;
       font-size: 1.5em;
   }
+  .location{
+    grid-area: location;
+  }
   .location h3{
       text-align: center;
       margin-bottom: 1.5rem;
@@ -985,6 +988,7 @@ color: white;
       height: 20rem;
   }
 .faq {
+  grid-area: faq;
   color: white;
 }
 
@@ -996,7 +1000,7 @@ color: white;
       font-size: 1.5em;
   }    
   .faq h4{
-      display: grid;
+
       margin-top: 2rem;
       margin-left: 2rem;
       font-size: 1.1em;
@@ -1005,7 +1009,10 @@ color: white;
       margin-top: 2rem;
       margin-left: 2rem;
       font-size: 0.8em;
-  }   
+  }  
+  .contact{
+    grid-area: contact;
+  } 
   .contact h3{
       text-align: center;
       margin-top: 6rem;
@@ -1014,9 +1021,7 @@ color: white;
 
   }   
   .contact input{
-      display: grid;
-      grid-template-rows: 1fr;
-      grid-gap: 1.8rem;
+
       line-height: 0.5rem;
       padding: 1rem;
       margin-left: 2rem;
@@ -1034,7 +1039,7 @@ color: white;
   }   
   
   .submit {
-      display: flex;
+      grid-area: submit;
       flex-direction: column;
       margin-top: 1rem;
       margin-bottom: 1rem;
