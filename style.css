@@ -1055,5 +1055,7 @@ color: white;
   }  
 /* contact end*/
 @media screen and (min-width: 1366px){
-  
+  /* contact desktop start*/
+  .location iframe{
+  }
 }
