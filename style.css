@@ -471,7 +471,8 @@ margin-right: 0.7rem;
       "styles styles styles styles"
       "addon addon addon addon"
       "contact contact contact contact"
-      "mail mail submit submit";
+      "mail mail mail mail"
+      "send send send send";
     column-gap: 1rem;
     row-gap: 0;
   }
@@ -870,12 +871,7 @@ margin-top: 0.1rem;
   margin-bottom: 3rem;
 }
 
-.disclaim {
-  grid-area: disclaimer;
-  color: white;
-  font-size: 1ch;
-  margin-bottom: 0.8rem;
-}
+
 
 .contact {
   padding-top: 5rem;
