@@ -348,11 +348,11 @@ margin-right: 0.7rem;
   padding-bottom: 20%;
   }
   
-  .info img{
+  .profilepicture{
     position: absolute;
     z-index: 101;
   float: left;
-  width: 25%;
+  width: 20%;
   margin-left: 10rem;
   }
   
@@ -383,10 +383,10 @@ margin-right: 0.7rem;
   }
 
 
-.image img{
- margin-top: 8%; 
+.image{
+ margin-top: 1%; 
  background-color: #CAAC4E;
- padding-top: 1%;
+ padding-top: 0.5%;
  padding-bottom: 0.5%;
  width: 100%;
 }
