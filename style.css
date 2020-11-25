@@ -1072,4 +1072,7 @@ main {
   .short-form{
     display: inline-block;
   }
-}
+  .submit{
+    padding-left: 9rem;
+    padding-top: 1rem;
+  }
