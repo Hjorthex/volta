@@ -30,6 +30,7 @@
     <a href="http://lauramedie.dk/volta">contact</a>
     <a href="http://tobyqvist.dk/volta">about us</a>
   </div>
+
 </header>
 
 <!-- header and menu end-->
@@ -47,17 +48,29 @@
 
 <!--Java script burger menu end-->
 
-  <nav class="topnav">
+<section class="topnav">
+  <div class="topnav_left">
     <ul>
       <li><a href="">Models</a></li>
       <li><a href="">Customize</a></li>
       <li><a href="">About us</a></li>
       <li><a href="">Contact</a></li>
       <li><a href="">Partners</a></li>
-      <li><a href="">Login</a></li>
-      <li><a href="">Search</a></li>
     </ul>
-  </nav>
+  </div>
+
+  <div class="topnav_right">
+    <ul>
+      <li class="login_btn"><a href="">Login</a></li>
+    </ul>
+    
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+      </form>
+    </div>
+  </div>
+</section>
 
   <main>
     <div class="grid-container">

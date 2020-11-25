@@ -68,7 +68,7 @@ header {
 
 /* Header end */
 
-/* Menu start*/
+/* Burger menu start*/
 
 .sidenav {
   height: 100%;
@@ -108,34 +108,68 @@ header {
 }
 
 /* Menu end*/
-/* Index start*/
 
-nav {
+/*Desktop menu start*/
+
+.topnav {
   display: flex;
-  flex-direction: column;
-  margin-top: 3rem;
+  padding-top: 8rem;
   background-color: black;
+  overflow: hidden;
 }
 
-nav ul {
+.topnav div {
+  padding-left: 2rem;
+}
+
+.topnav_left {
+  padding-left: 0rem;
+}
+
+.topnav_right {
   display: flex;
-  justify-content: center;
-  margin-top: 6rem;
+  margin-left: 10rem;
 }
 
-nav ul li {
-  border-style: solid;
-  border-color: white;
-  padding: 0.5rem;
+.topnav div ul {
+  list-style: none;
+  display: flex;
+}
+
+.topnav div ul li {
+  padding: 1rem;
   border-radius: 3rem;
   border-width: 0.15rem;
   width: 8rem;
+  border-style: solid;
+  border-color: white;
+  padding: 1rem;
   text-align: center;
 }
 
-nav ul li a {
+.topnav div ul li a {
   text-decoration: none;
   color: white;
+}
+
+.topnav input[type="text"] {
+  padding: 1rem;
+  border-radius: 3rem;
+  border-width: 0.15rem;
+  width: 16rem;
+  border-style: solid;
+  border-color: white;
+  padding: 1rem;
+  text-align: left;
+  color: white;
+}
+
+/*Desktop menu end*/
+
+/* Index start*/
+
+nav {
+  display: none;
 }
 
 main {
@@ -341,11 +375,11 @@ main {
   width: 100%;
 }
 
-@media screen and (min-width: 1366) {
+@media only screen and (min-width: 1366px) {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto;
     grid-template-areas:
       "text text text text text text text text text text text text"
       "concept concept concept concept concept concept concept concept concept concept concept concept"
