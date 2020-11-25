@@ -941,6 +941,17 @@ color: white;
         width: 100vw;
 
       }
+      .grid-container-contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "testdrive testdrive"
+        "location location location location"
+        "faq faq"
+        "contact contact"
+        ;
+      }
 
       .testdrive {
         display: grid;
@@ -1056,6 +1067,4 @@ color: white;
 /* contact end*/
 @media screen and (min-width: 1366px){
   /* contact desktop start*/
-  .location iframe{
-  }
 }
