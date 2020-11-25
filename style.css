@@ -461,6 +461,7 @@ margin-right: 0.7rem;
   /* Configure start */ 
 
   .maincontainer {
+    background-color: #000000;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -572,11 +573,12 @@ margin-right: 0.7rem;
   display: grid;
   grid-template-columns: 7vw 1fr 1fr 1fr 1fr 7vw;
   grid-template-rows: auto;
+  column-gap: 0.4rem;
   row-gap: 1.5rem; 
   grid-template-areas: 
   ". black green yellow orange ."
   ". wheel1 wheel2 wheel3 wheel4 ."
-  ". spoiler spoiler spoiler spoiler ."
+  ". . spoiler spoiler . ."
 
 
 
@@ -587,9 +589,25 @@ margin-right: 0.7rem;
   justify-self: center;
 }
 
+.styling button {
+background-color: transparent;  
+  border-style: solid;
+  border-color: white;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  border-width: 0.09rem;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
 
 .black-paint {
   grid-area: black;
+}
+
+.black-paint:active {
+background-color: #000000;
 }
 
 .green-paint {
@@ -646,8 +664,10 @@ margin-bottom: 1rem;
   grid-template-rows: auto;
   grid-template-areas: 
   ". specs specs ."
-    ". sound ai ."
-    ". google laser ."
+    ". sound sound ."
+    ". ai ai ."
+    ". google google ."
+    ". laser laser ."
     ". mail mail ."
    ". submit submit ."
    ". disclaimer disclaimer ."
@@ -658,12 +678,12 @@ margin-bottom: 1rem;
 }
 .specifications {
   grid-area: specs;
-  background-color: #505252;
-  padding-bottom: 1rem;
+  background-color: black;
+  padding-bottom: 2rem;
   padding-top: 1rem;
-  margin-top: 0.7rem;
+  margin-top: 2rem;
   padding-left: 1.5rem;
-
+  
 }
 
 .specifications h2 {
@@ -672,24 +692,33 @@ margin-bottom: 1rem;
   text-align: center;
   font-weight: 600;
   padding-bottom: 0.3rem;
+  line-height: 2em;
 }
 
 .specifications p {
   color: white;
   font-weight: 300;
+  line-height: 2em;
+
 }
 
 .addons div {
   margin-bottom: 1rem;
+
 }
 
 .speaker {
   justify-self: center;
   grid-area: sound;
   margin-top: 0.7rem;
-  background-color: #505252;
   padding-bottom: 2rem;
-
+  border: 0.09rem solid white;
+  border-radius: 3rem;
+  background-image: url(./images/speaker.jpg);
+  width: 100%;
+  height: 4rem;
+  background-size: cover;
+  background-position: center;
 }
 
 .features {
@@ -697,32 +726,52 @@ margin-bottom: 1rem;
 }
 
 .featureinfo {
-  font-weight: 300;
+  padding-top: 2.5rem;
+  font-weight: 700;
   color: white;
   text-align: center;
-  font-size: 1.3ch;
+  font-size: 2ch;
+  letter-spacing: 0.3ch;
 }
 
 .selfdrive {
   padding-bottom: 2rem;
   grid-area: ai;
   margin-top: 0.7rem;
-  background-color: #505252;
+  border: 0.09rem solid white;
+  border-radius: 3rem;
+  background-image: url(./images/ai.jpg);
+  width: 100%;
+  height: 4rem;
+  background-size: cover;
+  background-position: center;
 }
 
 
 .smartcar {
   padding-bottom: 2rem;
   grid-area: google;
-  background-color: #505252;
+  border: 0.09rem solid white;
+  border-radius: 3rem;
+  background-image: url(./images/google.jpg);
+  width: 100%;
+  height: 4rem;
+  background-size: cover;
+  background-position: center;
 }
 
 
 .laser {
   grid-area: laser;
-  background-color: #505252;
   display: flex;
   flex-direction: column;
+  border: 0.09rem solid white;
+  border-radius: 3rem;
+  background-image: url(./images/laser.jpg);
+  width: 100%;
+  height: 4rem;
+  background-size: cover;
+  background-position: center;
 }
 .laser h3 {
   padding-top: 0.3rem;
@@ -732,7 +781,6 @@ margin-bottom: 1rem;
 margin: 0.5rem auto;
 padding-left: 0.6rem;
 height: 1rem;
-
 width: 83%;
 }
 
