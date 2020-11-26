@@ -1,0 +1,79 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <meta name="keywords" content="order confirmed volta submitted">
+        <meta name="description" content="this is the confirmation page you will get to when you have ordered an electric car from Volta ">
+        <title>Volta</title>
+    </head>
+    <body>
+    <!-- header and menu start-->
+    <header>
+      <a href="profile.html"><div class="profile"><img src="./images/profile.png" alt=""> </div></a>
+      <a href="index.html"><div class="logo">  <img src="./images/logot.png" alt="">  </div></a>
+      
+      <img onclick="openNav()" class="burger" src="./images/burger.png" alt="">
+      
+      <div class="blackline"></div>
+      <div class="goldyhead"></div>
+      <div class="greyline"></div>
+    
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">home</a>
+        <a href="profile.html">sign in</a>
+        <a href="configure.html">build your volta</a>     
+        <a href="contact.html">contact</a>
+        <a href="about.html">about us</a>
+      </div>
+      </header>
+      <section class="topnav">
+        <div class="topnav_left">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Partners</a></li>
+          </ul>
+        </div>
+      
+        <div class="topnav_right">
+          <ul>
+            <li><a href="profile.html">Login</a></li>
+            <li><a href="configure.html">Customize</a></li>
+            
+          </ul>
+          
+          <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- header and menu end-->
+    
+      <main class="submitted"> 
+          <div>
+          <h1>Thank you for submitting your design</h1>
+          <h2>We will be in touch!</h2>
+          <a href="http://hjorthex.dk/volta">Return to start</a>
+</div>
+
+
+        
+      </main>  
+            <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "100vw";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }      
+      </script>
+    
+    </body>    
+</html>
