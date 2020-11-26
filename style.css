@@ -1035,10 +1035,14 @@ main {
   }
   .location h3{
     display: flex;
-    position: relative;
+    position: absolute;
     z-index: 101;
-    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     font-size: 2em;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
   }
   .location iframe{
     height: 35rem;
