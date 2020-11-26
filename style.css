@@ -60,12 +60,6 @@ header {
   height: 0.5rem;
 }
 
-.greyline {
-  width: 100%;
-  background-color: #505252;
-  height: 1.8rem;
-}
-
 /* Header end */
 
 /* Burger menu start*/
@@ -175,8 +169,8 @@ main {
   flex-direction: column;
   grid-area: text;
   width: 100%;
-  margin-top: 7rem;
-  margin-bottom: 1rem;
+  margin-top: 15rem;
+  margin-bottom: 5rem;
 }
 
 .text-element h1 {
@@ -192,6 +186,10 @@ main {
   align-items: center;
 }
 
+.content-image div {
+  display: none;
+}
+
 .content-image img {
   width: 100%;
 }
@@ -201,8 +199,8 @@ main {
   flex-direction: column;
   grid-area: writing;
   width: 100%;
-  margin-top: 7rem;
-  margin-bottom: 1rem;
+  margin-top: 12rem;
+  margin-bottom: 5rem;
 }
 
 .writing-element h1 {
@@ -218,8 +216,8 @@ main {
   grid-area: visual;
   background-color: white;
   align-items: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .visual-image img {
@@ -231,8 +229,8 @@ main {
   flex-direction: column;
   grid-area: letters;
   width: 100%;
-  margin-top: 7rem;
-  margin-bottom: 1rem;
+  margin-top: 12rem;
+  margin-bottom: 5rem;
 }
 
 .letters-element h1 {
@@ -248,8 +246,8 @@ main {
   grid-area: custom;
   background-color: white;
   align-items: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .customize-image img {
@@ -261,8 +259,8 @@ main {
   flex-direction: column;
   grid-area: need;
   width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 1rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
 }
 
 .needs-element h1 {
@@ -287,8 +285,8 @@ main {
   grid-area: stats;
   background-color: white;
   align-items: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .stats-image img {
@@ -300,8 +298,8 @@ main {
   flex-direction: column;
   grid-area: contact;
   width: 100%;
-  margin-top: 6rem;
-  margin-bottom: 1rem;
+  margin-top: 12rem;
+  margin-bottom: 5rem;
 }
 
 .contact-element h1 {
@@ -318,12 +316,31 @@ main {
   grid-area: map;
   background-color: white;
   align-items: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .map-image img {
   width: 100%;
+}
+
+.map-image div ul li {
+  display: none;
+  list-style: none;
+  justify-content: center;
+  list-style: none;
+  border-style: solid;
+  border-color: black;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  border-width: 0.15rem;
+  width: 8rem;
+  text-align: center;
+}
+
+.map-image div ul li a {
+  display: none;
+  color: black;
 }
 
 /* Index end*/ /* Profile start*/
@@ -1272,17 +1289,23 @@ padding-top: 5rem;
   .topnav {
     display: flex;
     justify-content: center;
-    padding-top: 8rem;
+    padding-top: 6rem;
     background-color: black;
+    overflow: none;
   }
 
   .topnav_left {
-    padding-right: 0rem;
+    padding-right: 2rem;
   }
 
   .topnav_right {
     display: flex;
-    padding-right: 0rem;
+    padding-left: 4rem;
+  }
+
+  .topnav div {
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 
   .topnav div ul {
@@ -1294,7 +1317,6 @@ padding-top: 5rem;
     padding: 1rem;
     border-radius: 3rem;
     border-width: 0.15rem;
-
     border-style: solid;
     border-color: white;
     margin-right: 0.5rem;
@@ -1312,12 +1334,14 @@ padding-top: 5rem;
     padding: 1rem;
     border-radius: 3rem;
     border-width: 0.15rem;
-    width: 16rem;
+    width: 14rem;
     border-style: solid;
     border-color: white;
     padding: 1rem;
     text-align: left;
     color: white;
+    background-color: black;
+    font-size: 1.2em;
   }
 
   /*Main page grid*/
@@ -1328,13 +1352,97 @@ padding-top: 5rem;
     grid-template-areas:
       "text text text text text text text text text text text text"
       "concept concept concept concept concept concept concept concept concept concept concept concept"
-      "writing writing writing writing writing writing writing writing writing writing writing writing"
-      "visual visual visual visual visual visual visual visual visual visual visual visual"
-      "letters letters letters letters letters letters letters letters letters letters letters letters"
-      "custom custom custom custom custom custom custom custom custom custom custom custom"
-      "need need need need need need need need need need need need"
-      "stats stats stats stats stats stats stats stats stats stats stats stats"
-      "contact contact contact contact contact contact contact contact contact contact contact contact"
+      "writing writing writing writing letters letters letters letters need need need need"
       "map map map map map map map map map map map map";
+  }
+
+  .text-element {
+    display: flex;
+    flex-direction: column;
+    grid-area: text;
+    width: 100%;
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+  }
+
+  .text-element h1 {
+    font-size: 4em;
+    margin-bottom: 10rem;
+  }
+
+  .content-image {
+    grid-area: concept;
+    background-color: white;
+    width: 100%;
+    align-items: center;
+    position: relative;
+  }
+
+  .content-image img {
+    width: 100%;
+  }
+
+  .needs-element,
+  .writing-element,
+  .letters-element {
+    margin-bottom: -10rem;
+  }
+
+  .needs-element h2 {
+    margin-bottom: 10rem;
+  }
+
+  .writing-element h1,
+  .letters-element h1 {
+    margin-bottom: 11rem;
+  }
+
+  .stats-image,
+  .stats-image img {
+    display: none;
+  }
+
+  .visual-image,
+  .visual-image img {
+    display: none;
+  }
+
+  .customize-image,
+  .customize-image img {
+    display: none;
+  }
+
+  .contact-element,
+  .contact-element h1,
+  .contact-element ul,
+  .contact-element ul li {
+    display: none;
+  }
+
+  .map-image {
+    grid-area: map;
+    background-color: white;
+    align-items: center;
+    padding-bottom: 10rem;
+    padding-top: 5rem;
+  }
+
+  .map-image img {
+    width: 60%;
+  }
+
+  .map-image div ul li {
+    display: flex;
+  }
+
+  .map-image div ul li a {
+    display: flex;
+  }
+
+  .writing-element,
+  .letters-element,
+  .needs-element {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
   }
 }
